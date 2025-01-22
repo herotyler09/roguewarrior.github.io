@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select a Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        .game-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .game {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select a Game to Play</h1>
+    <div class="game-container">
+        <!-- Game 1 -->
+        <div class="game">
+            <a href="https://studio.code.org/projects/applab/91vrstWp2wSu8euzFGsgo4TZB6gabi4hrX8IFYCrsGY" target="_blank">
+                <img src="RogueWarriorLogo.png" alt="Rogue Warrior">
+                <p>Play Rogue Warrior</p>
+            </a>
+        </div>
+        <!-- Game 2 -->
+        <div class="game">
+            <a href="https://studio.code.org/projects/applab/m8mpvgEO5lucd0PyOuD4DeGibxozz6lbXjxcTy9610Y" target="_blank">
+                <img src="RogueGamblerLogo.png" alt="Rogue Gambler">
+                <p>Play Rogue Gambler</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
